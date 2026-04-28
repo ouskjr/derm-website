@@ -9,11 +9,16 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
+<!-- NAVIGATION -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">Lamazi</a>
-      <ul class="nav-links">
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
@@ -133,6 +138,14 @@
       <p class="footer-copy">© 2025 Lamazi Ltd. All rights reserved.</p>
     </div>
   </footer>
+<script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      const burger = document.getElementById('hamburger');
+      nav.classList.toggle('open');
+      burger.classList.toggle('open');
+    }
+  </script>
 
 </body>
 </html>
