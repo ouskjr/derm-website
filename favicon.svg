@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lamazi">
+  <rect width="64" height="64" rx="16" fill="#FDF0F3"/>
+  <path d="M22 14h10v30h15v8H22z" fill="#8F465C"/>
+  <circle cx="44" cy="20" r="5" fill="#C97A8F"/>
+</svg>
