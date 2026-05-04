@@ -34,3 +34,17 @@ document.getElementById('hamburger')?.addEventListener('click', () => toggleMenu
 document.querySelectorAll('#nav-links a').forEach((link) => {
   link.addEventListener('click', () => toggleMenu(false));
 });
+
+const observer = new IntersectionObserver(
+  (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }),
+  { threshold: 0.12 }
+);
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+const navbar = document.querySelector('.navbar');
+const backToTop = document.querySelector('.back-to-top');
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  navbar?.classList.toggle('scrolled', y > 50);
+  backToTop?.classList.toggle('visible', y > 300);
+});
+backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));

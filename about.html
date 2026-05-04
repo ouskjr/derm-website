@@ -54,12 +54,19 @@
     </div>
   </section>
 
+  <!-- WAVE: page-header → bio -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,30 C300,60 900,0 1200,30 L1200,60 L0,60 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+
   <!-- BIO SECTION -->
   <section class="about-section">
     <div class="about-container">
 
       <!-- Photo -->
-      <div class="about-photo">
+      <div class="about-photo reveal">
         <div class="about-photo-placeholder">
           <span>Magdana Machavariani</span>
         </div>
@@ -67,22 +74,22 @@
 
       <!-- Bio text -->
       <div class="about-text">
-        <p class="section-eyebrow">My story</p>
-        <h2 class="about-title">Skincare is personal.<br/>So is my approach.</h2>
-        <p class="about-body">I'm Magdana Machavariani, a Licensed Esthetician based in Brielle, New Jersey. With years of professional training and hands-on experience, I specialize in personalized skincare treatments that deliver real, visible results.</p>
-        <p class="about-body">I founded Lamazi with one belief: great skincare shouldn't require you to leave home. Every client deserves a treatment that fits their schedule, their skin, and their life. That's why I come to you — fully equipped, fully prepared, and fully focused on your skin.</p>
-        <p class="about-body">Whether you're looking to address a specific concern or simply want to invest in your skin's health, I'll create a treatment plan that works for you.</p>
+        <p class="section-eyebrow reveal">My story</p>
+        <h2 class="about-title reveal">Skincare is personal.<br/>So is my approach.</h2>
+        <p class="about-body reveal">I'm Magdana Machavariani, a Licensed Esthetician based in Brielle, New Jersey. With years of professional training and hands-on experience, I specialize in personalized skincare treatments that deliver real, visible results.</p>
+        <p class="about-body reveal">I founded Lamazi with one belief: great skincare shouldn't require you to leave home. Every client deserves a treatment that fits their schedule, their skin, and their life. That's why I come to you — fully equipped, fully prepared, and fully focused on your skin.</p>
+        <p class="about-body reveal">Whether you're looking to address a specific concern or simply want to invest in your skin's health, I'll create a treatment plan that works for you.</p>
 
         <div class="about-credentials">
-          <div class="credential">
+          <div class="credential reveal">
             <span class="credential-title">Licensed Esthetician</span>
             <span class="credential-sub">State of New Jersey</span>
           </div>
-          <div class="credential">
+          <div class="credential reveal">
             <span class="credential-title">Mobile Services</span>
             <span class="credential-sub">Brielle & surrounding NJ areas</span>
           </div>
-          <div class="credential">
+          <div class="credential reveal">
             <span class="credential-title">Premium Products</span>
             <span class="credential-sub">Professional grade only</span>
           </div>
@@ -92,28 +99,35 @@
     </div>
   </section>
 
+  <!-- WAVE: bio → values -->
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,20 C200,55 500,0 700,35 C900,65 1050,10 1200,30 L1200,60 L0,60 Z" fill="var(--pink-light)"/>
+    </svg>
+  </div>
+
   <!-- VALUES SECTION -->
   <section class="values-section">
     <div class="section-container">
-      <p class="section-eyebrow">What sets Lamazi apart</p>
-      <h2 class="section-title">My commitment to you</h2>
+      <p class="section-eyebrow reveal">What sets Lamazi apart</p>
+      <h2 class="section-title reveal">My commitment to you</h2>
       <div class="values-grid">
-        <div class="value-card">
+        <div class="value-card reveal">
           <div class="value-icon" aria-hidden="true">✦</div>
           <h3>Personalized care</h3>
           <p>Every session begins with a consultation. No two skins are the same and no two treatments should be either.</p>
         </div>
-        <div class="value-card">
+        <div class="value-card reveal">
           <div class="value-icon" aria-hidden="true">✦</div>
           <h3>Your home, your comfort</h3>
           <p>Skip the travel and the waiting room. I bring a full professional setup directly to your door.</p>
         </div>
-        <div class="value-card">
+        <div class="value-card reveal">
           <div class="value-icon" aria-hidden="true">✦</div>
           <h3>Premium products only</h3>
           <p>I use professional-grade products chosen specifically for your skin type and treatment goals.</p>
         </div>
-        <div class="value-card">
+        <div class="value-card reveal">
           <div class="value-icon" aria-hidden="true">✦</div>
           <h3>Results you can see</h3>
           <p>My treatments are designed to deliver visible improvements — not just in the moment, but long term.</p>
@@ -125,9 +139,9 @@
   <!-- CTA -->
   <section class="cta-section">
     <div class="cta-container">
-      <h2>Ready to meet your skin's potential?</h2>
-      <p>Book a session and experience the Lamazi difference in the comfort of your own home.</p>
-      <div class="cta-buttons">
+      <h2 class="reveal">Ready to meet your skin's potential?</h2>
+      <p class="reveal">Book a session and experience the Lamazi difference in the comfort of your own home.</p>
+      <div class="cta-buttons reveal">
         <a href="booking.html" class="btn-primary">Book an Appointment</a>
         <a href="https://wa.me/17325673347" class="btn-whatsapp" target="_blank" rel="noopener">Chat on WhatsApp</a>
       </div>
@@ -151,6 +165,7 @@
       <p class="footer-copy">© 2026 Lamazi Ltd. All rights reserved.</p>
     </div>
   </footer>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
   <script src="script.js" defer></script>
 
 </body>
