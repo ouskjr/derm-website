@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Portrait placeholder">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0.17  0 0 0 0 0.15  0 0 0 0 0.13  0 0 0 0.1 0"/>
+    </filter>
+  </defs>
+
+  <!-- Paper field -->
+  <rect width="600" height="800" fill="#EFE6D8"/>
+  <rect width="600" height="800" filter="url(#grain)"/>
+
+  <!-- Inner frame -->
+  <rect x="36" y="36" width="528" height="728" fill="none" stroke="#9C684D" stroke-width="0.8"/>
+  <rect x="44" y="44" width="512" height="712" fill="none" stroke="#9C684D" stroke-width="0.3"/>
+
+  <!-- Botanical specimen, ink-style -->
+  <g stroke="#9C684D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Stem -->
+    <path d="M 300 720 Q 305 580, 295 460 Q 285 360, 305 260 Q 320 200, 300 130" stroke-width="1.2"/>
+
+    <!-- Leaves left -->
+    <path d="M 300 660 C 270 650, 245 660, 230 685 C 255 695, 285 685, 300 668 Z" stroke-width="0.9"/>
+    <path d="M 295 560 C 265 550, 240 560, 220 580 C 245 595, 280 590, 295 570 Z" stroke-width="0.9"/>
+    <path d="M 295 460 C 270 450, 245 458, 230 478 C 250 488, 280 485, 295 470 Z" stroke-width="0.9"/>
+    <path d="M 295 360 C 270 350, 245 358, 230 375 C 250 385, 280 380, 295 368 Z" stroke-width="0.9"/>
+
+    <!-- Leaves right -->
+    <path d="M 305 610 C 335 600, 360 610, 375 632 C 350 642, 320 632, 305 618 Z" stroke-width="0.9"/>
+    <path d="M 305 510 C 335 500, 360 510, 375 530 C 350 540, 320 530, 305 518 Z" stroke-width="0.9"/>
+    <path d="M 305 410 C 335 400, 365 410, 380 425 C 355 438, 325 432, 305 418 Z" stroke-width="0.9"/>
+    <path d="M 305 310 C 335 300, 360 308, 375 325 C 350 335, 320 330, 305 318 Z" stroke-width="0.9"/>
+
+    <!-- Flower at top -->
+    <circle cx="300" cy="180" r="22" stroke-width="1"/>
+    <circle cx="300" cy="180" r="8" stroke-width="0.8" fill="#C68B6E" fill-opacity="0.35"/>
+    <path d="M 300 158 L 300 142 M 322 180 L 338 180 M 300 202 L 300 218 M 278 180 L 262 180" stroke-width="0.8"/>
+    <path d="M 316 164 L 327 153 M 316 196 L 327 207 M 284 196 L 273 207 M 284 164 L 273 153" stroke-width="0.7"/>
+
+    <!-- Flower bud -->
+    <circle cx="300" cy="120" r="6" stroke-width="0.9" fill="#C68B6E" fill-opacity="0.3"/>
+  </g>
+
+  <!-- Apothecary label -->
+  <g transform="translate(300, 760)">
+    <text text-anchor="middle"
+          font-family="Cormorant Garamond, Georgia, serif"
+          font-size="20" font-style="italic" fill="#9C684D">Portrait — by hand</text>
+    <text y="22" text-anchor="middle"
+          font-family="Inter, Helvetica, sans-serif"
+          font-size="10" letter-spacing="3" fill="#6E5F52">REPLACE WITH REAL PHOTOGRAPHY</text>
+  </g>
+
+  <!-- Specimen tag (top-right corner) -->
+  <g transform="translate(490, 90) rotate(8)">
+    <rect x="-50" y="-18" width="100" height="36" fill="#FAF6EE" stroke="#9C684D" stroke-width="0.6"/>
+    <text text-anchor="middle" y="-2"
+          font-family="Cormorant Garamond, Georgia, serif"
+          font-size="13" font-style="italic" fill="#9C684D">No. i</text>
+    <text text-anchor="middle" y="12"
+          font-family="Inter, Helvetica, sans-serif"
+          font-size="8" letter-spacing="2" fill="#6E5F52">MAGDANA</text>
+  </g>
+</svg>
