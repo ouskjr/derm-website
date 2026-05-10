@@ -6,7 +6,7 @@
   <title>Lamazi | Skincare by Magdana Machavariani</title>
   <meta name="description" content="Lamazi brings personalized skincare and facial treatments to clients at home throughout NJ & NY." />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#A85870" />
+  <meta name="theme-color" content="#FAF6EE" />
   <link rel="canonical" href="https://lamazi.netlify.app/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Lamazi" />
@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -33,14 +33,8 @@
         "name": "Magdana Machavariani"
       },
       "areaServed": [
-        {
-          "@type": "State",
-          "name": "New Jersey"
-        },
-        {
-          "@type": "State",
-          "name": "New York"
-        }
+        { "@type": "State", "name": "New Jersey" },
+        { "@type": "State", "name": "New York" }
       ],
       "priceRange": "$$"
     }
@@ -49,7 +43,7 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
- <!-- NAVIGATION -->
+  <!-- NAVIGATION -->
   <nav class="navbar" aria-label="Primary navigation">
     <div class="nav-container">
       <a href="index.html" class="logo" aria-label="Lamazi home">Lamazi</a>
@@ -63,181 +57,232 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+        <li><a href="booking.html" class="nav-cta">Book</a></li>
       </ul>
     </div>
   </nav>
 
   <main id="main-content">
-  <!-- HERO SECTION -->
+
+  <!-- HERO -->
   <div class="hero-wrap">
-    <!-- Botanical: upper-right sprig -->
-    <svg class="botanical botanical--tr" viewBox="0 0 180 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-      <path d="M155 12 C130 50 95 90 65 130 C45 158 28 188 20 225" stroke="var(--pink-accent)" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M130 45 C145 30 162 22 168 15 C155 20 140 35 130 45Z" stroke="var(--pink-accent)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
-      <path d="M115 62 C98 48 82 40 72 35 C82 48 100 58 115 62Z" stroke="var(--pink-accent)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
-      <path d="M88 100 C102 85 118 75 126 68 C112 78 96 92 88 100Z" stroke="var(--pink-accent)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
-      <path d="M72 118 C56 105 40 98 30 93 C42 102 58 112 72 118Z" stroke="var(--pink-accent)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
-      <path d="M52 158 C65 142 80 132 88 126 C74 136 58 150 52 158Z" stroke="var(--pink-accent)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
-    </svg>
-    <!-- Botanical: lower-left flower -->
-    <svg class="botanical botanical--bl" viewBox="0 0 100 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-      <path d="M50 140 C50 115 50 95 50 75" stroke="var(--pink-accent)" stroke-width="1.5" stroke-linecap="round"/>
-      <path d="M50 105 C40 98 30 94 24 92 C34 96 44 102 50 105Z" stroke="var(--pink-accent)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
-      <path d="M50 55 C44 42 44 28 50 18 C56 28 56 42 50 55Z" stroke="var(--pink-accent)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
-      <path d="M50 55 C62 52 74 44 78 35 C68 42 58 50 50 55Z" stroke="var(--pink-accent)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
-      <path d="M50 55 C62 58 72 68 72 78 C62 68 55 60 50 55Z" stroke="var(--pink-accent)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
-      <path d="M50 55 C38 58 28 68 28 78 C38 68 45 60 50 55Z" stroke="var(--pink-accent)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
-      <path d="M50 55 C38 52 26 44 22 35 C32 42 42 50 50 55Z" stroke="var(--pink-accent)" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
-      <circle cx="50" cy="55" r="6" stroke="var(--pink-accent)" stroke-width="1.2" fill="none"/>
-    </svg>
+    <div class="hero-botanical" aria-hidden="true">
+      <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <g stroke="#9C684D" stroke-linecap="round" stroke-linejoin="round">
+          <!-- Main trailing stem -->
+          <path d="M 90 540 Q 160 420, 240 360 Q 340 290, 420 240 Q 520 180, 600 120 Q 660 75, 720 50" stroke-width="1.4"/>
+          <!-- Branch up-left -->
+          <path d="M 240 360 Q 200 320, 170 270 Q 150 230, 145 200" stroke-width="1.1"/>
+          <!-- Branch out -->
+          <path d="M 420 240 Q 470 230, 520 245 Q 570 260, 605 290" stroke-width="1.1"/>
+          <!-- Leaves cluster 1 -->
+          <path d="M 175 295 C 160 280, 145 280, 132 290 C 145 305, 165 305, 180 298 Z" stroke-width="0.9"/>
+          <path d="M 195 320 C 215 312, 235 318, 245 332 C 230 340, 210 338, 198 326 Z" stroke-width="0.9"/>
+          <!-- Leaves cluster 2 -->
+          <path d="M 305 320 C 290 305, 275 305, 262 315 C 275 332, 295 332, 308 322 Z" stroke-width="0.9"/>
+          <path d="M 360 280 C 380 268, 400 270, 410 285 C 395 295, 375 295, 362 286 Z" stroke-width="0.9"/>
+          <!-- Leaves cluster 3 -->
+          <path d="M 470 235 C 460 215, 445 210, 430 218 C 440 235, 460 245, 472 240 Z" stroke-width="0.9"/>
+          <path d="M 540 200 C 555 185, 575 185, 588 195 C 575 215, 555 218, 540 208 Z" stroke-width="0.9"/>
+          <!-- Leaves cluster 4 -->
+          <path d="M 612 122 C 595 110, 578 112, 568 125 C 580 140, 600 140, 614 130 Z" stroke-width="0.9"/>
+          <path d="M 660 80 C 678 68, 698 70, 706 84 C 692 96, 672 96, 660 88 Z" stroke-width="0.9"/>
+          <!-- Small flower 1 -->
+          <circle cx="145" cy="200" r="9" stroke-width="1"/>
+          <circle cx="145" cy="200" r="3" stroke-width="0.8" fill="#C68B6E" fill-opacity="0.4"/>
+          <path d="M 145 191 L 145 184 M 154 200 L 161 200 M 145 209 L 145 216 M 136 200 L 129 200 M 151 194 L 156 189 M 151 206 L 156 211 M 139 206 L 134 211 M 139 194 L 134 189" stroke-width="0.8"/>
+          <!-- Small flower 2 -->
+          <circle cx="610" cy="293" r="8" stroke-width="1"/>
+          <circle cx="610" cy="293" r="2.5" stroke-width="0.8" fill="#C68B6E" fill-opacity="0.4"/>
+          <path d="M 610 285 L 610 279 M 618 293 L 624 293 M 610 301 L 610 307 M 602 293 L 596 293" stroke-width="0.8"/>
+          <!-- Small flower 3 (top) -->
+          <circle cx="725" cy="48" r="7" stroke-width="1"/>
+          <circle cx="725" cy="48" r="2.5" stroke-width="0.8" fill="#C68B6E" fill-opacity="0.4"/>
+          <path d="M 725 41 L 725 35 M 732 48 L 738 48 M 725 55 L 725 61 M 718 48 L 712 48" stroke-width="0.8"/>
+          <!-- Tiny seedling base -->
+          <path d="M 90 540 L 86 555 M 90 540 L 95 555 M 90 540 L 90 558" stroke-width="0.7"/>
+        </g>
+      </svg>
+    </div>
 
     <section class="hero">
       <div class="hero-inner">
-        <p class="hero-eyebrow">Licensed Esthetician · Serving NJ &amp; NY</p>
+        <p class="hero-eyebrow">Skincare · By Appointment · NJ &amp; NY</p>
         <div class="hero-rule" aria-hidden="true"></div>
-        <h1 class="hero-title">Radiant skin, in the comfort of your home.</h1>
-        <p class="hero-sub">Professional skincare treatments brought directly to you. Personalized, relaxing, and results-driven.</p>
+        <h1 class="hero-title">Slow skincare, in <em>your</em> own kitchen light.</h1>
+        <p class="hero-sub">Magdana Machavariani is a licensed esthetician working out of homes along the Jersey Shore. One client at a time, on your kitchen table, with the same products she'd use on her own skin.</p>
         <div class="hero-ctas">
-          <a href="booking.html" class="btn-primary">Book an Appointment</a>
-          <a href="about.html" class="btn-ghost">Learn More</a>
+          <a href="booking.html" class="btn-primary">Request a visit</a>
+          <a href="about.html" class="btn-ghost">Meet Magdana</a>
         </div>
       </div>
     </section>
   </div>
 
-  <!-- MARQUEE TICKER -->
-  <div class="marquee-wrap" aria-hidden="true">
-    <div class="marquee-track">
-      <div class="marquee-content">
-        <span>Licensed Esthetician</span><span class="marquee-sep">·</span>
-        <span>NJ &amp; NY</span><span class="marquee-sep">·</span>
-        <span>Premium Products</span><span class="marquee-sep">·</span>
-        <span>Mobile Service</span><span class="marquee-sep">·</span>
-        <span>Personalized Care</span><span class="marquee-sep">·</span>
-        <span>Results-Driven</span><span class="marquee-sep">·</span>
-      </div>
-      <div class="marquee-content">
-        <span>Licensed Esthetician</span><span class="marquee-sep">·</span>
-        <span>NJ &amp; NY</span><span class="marquee-sep">·</span>
-        <span>Premium Products</span><span class="marquee-sep">·</span>
-        <span>Mobile Service</span><span class="marquee-sep">·</span>
-        <span>Personalized Care</span><span class="marquee-sep">·</span>
-        <span>Results-Driven</span><span class="marquee-sep">·</span>
-      </div>
-    </div>
-  </div>
+  <!-- EDITORIAL LINE (replaces marquee) -->
+  <section class="editorial-line" aria-label="Practice tagline">
+    <p><em>By appointment, in the comfort of your home — Brielle, NJ and the Jersey Shore.</em></p>
+  </section>
 
-  <!-- TRUST BAR -->
-  <section class="trust-bar">
-    <div class="trust-container">
-      <div class="trust-item reveal">
-        <span class="trust-number">100%</span>
-        <span class="trust-label">Premium Products</span>
+  <!-- PRACTICE NOTES (replaces trust bar) -->
+  <section class="practice-notes" aria-label="Practice notes">
+    <div class="practice-notes-container">
+      <div class="practice-note reveal">
+        <span class="pn-num">No. 01</span>
+        <span class="pn-label">Licensed esthetician, <em>NJ State Board.</em> Years of training, a small list of regulars.</span>
       </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item reveal">
-        <span class="trust-number">Mobile</span>
-        <span class="trust-label">Home Visits Only</span>
+      <div class="practice-note reveal">
+        <span class="pn-num">No. 02</span>
+        <span class="pn-label">Mobile only. Brielle and the surrounding shore towns — <em>Sea Girt, Manasquan, Spring Lake, Wall.</em></span>
       </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item reveal">
-        <span class="trust-number">NJ & NY</span>
-        <span class="trust-label">Serving NJ & NY</span>
-      </div>
-      <div class="trust-divider"></div>
-      <div class="trust-item reveal">
-        <span class="trust-number">Personal</span>
-        <span class="trust-label">1-on-1 Sessions</span>
+      <div class="practice-note reveal">
+        <span class="pn-num">No. 03</span>
+        <span class="pn-label">Pharmacy-grade products, <em>chosen for your skin, not commission.</em> Nothing is sold to you afterward.</span>
       </div>
     </div>
   </section>
 
-  <!-- QUOTE SECTION -->
-  <section class="quote-section">
-    <p class="quote-text reveal">Radiant skin doesn't happen by chance — it happens by appointment.</p>
-  </section>
+  <div class="section-rule" aria-hidden="true"><span class="mark">✦</span></div>
 
-  <!-- WAVE: quote → services -->
-  <div class="wave-divider" aria-hidden="true">
-    <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,20 C200,55 500,0 700,35 C900,65 1050,10 1200,30 L1200,60 L0,60 Z" fill="var(--pink-light)"/>
-    </svg>
-  </div>
+  <!-- INDEX OF TREATMENTS (replaces 4-col grid) -->
+  <section class="treatment-index">
+    <div class="ti-header">
+      <p class="section-eyebrow reveal">An index of treatments</p>
+      <h2 class="section-title reveal-clip">A short list, <em>done well.</em></h2>
+    </div>
 
-  <!-- SERVICES PREVIEW -->
-  <section class="services-preview" style="background: var(--pink-light);">
-    <div class="section-container">
-      <p class="section-eyebrow reveal">What we offer</p>
-      <h2 class="section-title reveal-clip">Treatments tailored to you</h2>
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">✦</div>
-          <h3>Facial Treatments</h3>
-          <p>Deep cleansing, hydrating, and rejuvenating facials for every skin type.</p>
+    <div class="treatment-list">
+
+      <article class="treatment-row reveal">
+        <span class="ti-num">№ 01</span>
+        <div class="ti-body">
+          <h3>Facials</h3>
+          <p class="ti-latin">Rosa damascena</p>
+          <p>The slow weekly ritual. Cleanse, steam, mask — adapted to whatever your skin is doing this month, not what it was doing in the last one.</p>
         </div>
-        <div class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">✦</div>
+        <div class="ti-aside">
+          <span class="ti-price">from $85</span>
+          <span class="ti-duration">60 min</span>
+        </div>
+        <span class="specimen-label" aria-hidden="true">Rose · 60 min · from $85</span>
+      </article>
+
+      <article class="treatment-row ti-right reveal">
+        <span class="ti-num">№ 02</span>
+        <div class="ti-body">
           <h3>Anti-Aging</h3>
-          <p>Targeted treatments to reduce fine lines and restore a youthful glow.</p>
+          <p class="ti-latin">Centella asiatica</p>
+          <p>Collagen-stimulating peels, lifting massage, and the kind of patient layering that makes skin feel firmer — not different.</p>
         </div>
-        <div class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">✦</div>
+        <div class="ti-aside">
+          <span class="ti-price">from $120</span>
+          <span class="ti-duration">75 min</span>
+        </div>
+        <span class="specimen-label" aria-hidden="true">Gotu kola · 75 min · from $120</span>
+      </article>
+
+      <article class="treatment-row reveal">
+        <span class="ti-num">№ 03</span>
+        <div class="ti-body">
           <h3>Skin Renewal</h3>
-          <p>Peels and exfoliation treatments for brighter, smoother skin.</p>
+          <p class="ti-latin">Salix alba</p>
+          <p>Targeted exfoliation — chemical or mechanical, your skin tells me which — to reveal what's been sitting underneath the dullness.</p>
         </div>
-        <div class="service-card reveal">
-          <div class="service-icon" aria-hidden="true">✦</div>
-          <h3>Acne Care</h3>
-          <p>Gentle, effective treatments for acne-prone and sensitive skin.</p>
+        <div class="ti-aside">
+          <span class="ti-price">from $100</span>
+          <span class="ti-duration">60 min</span>
         </div>
-      </div>
-      <a href="services.html" class="btn-secondary reveal">View All Services & Pricing</a>
+        <span class="specimen-label" aria-hidden="true">Willow bark · 60 min · from $100</span>
+      </article>
+
+      <article class="treatment-row ti-right reveal">
+        <span class="ti-num">№ 04</span>
+        <div class="ti-body">
+          <h3>Acne &amp; Blemishes</h3>
+          <p class="ti-latin">Calendula officinalis</p>
+          <p>Patient, specific work. Extractions, calming masks, and a routine I'll write out for you to follow at home until next time.</p>
+        </div>
+        <div class="ti-aside">
+          <span class="ti-price">from $65</span>
+          <span class="ti-duration">30–60 min</span>
+        </div>
+        <span class="specimen-label" aria-hidden="true">Calendula · from $65</span>
+      </article>
+
+    </div>
+
+    <div class="ti-foot">
+      <a href="services.html" class="btn-secondary reveal">The full menu &amp; pricing</a>
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
+  <!-- HOW IT WORKS — pinned apothecary cards -->
   <section class="how-it-works">
     <div class="section-container">
-      <p class="section-eyebrow reveal">Simple process</p>
-      <h2 class="section-title reveal-clip">How it works</h2>
+      <p class="section-eyebrow reveal">How a visit works</p>
+      <h2 class="section-title reveal-clip">Three small steps.</h2>
       <div class="hiw-steps">
-        <div class="hiw-step reveal">
-          <div class="hiw-circle">01</div>
-          <h3>Book Your Visit</h3>
-          <p>Choose a service and select a time that works for you — online or via WhatsApp.</p>
-        </div>
-        <div class="hiw-arrow" aria-hidden="true">→</div>
-        <div class="hiw-step reveal">
-          <div class="hiw-circle">02</div>
-          <h3>We Come to You</h3>
-          <p>Magdana arrives at your home fully equipped with professional-grade products.</p>
-        </div>
-        <div class="hiw-arrow" aria-hidden="true">→</div>
-        <div class="hiw-step reveal">
-          <div class="hiw-circle">03</div>
-          <h3>Glow With Confidence</h3>
-          <p>Leave your session with radiant, refreshed skin and a personalized care plan.</p>
-        </div>
+        <article class="hiw-card reveal">
+          <span class="hiw-numeral">i.</span>
+          <h3>You write or call</h3>
+          <p>WhatsApp is fastest. Tell me what's going on with your skin, when you'd like me, and where in NJ or NY you are.</p>
+        </article>
+        <article class="hiw-card reveal">
+          <span class="hiw-numeral">ii.</span>
+          <h3>I bring everything</h3>
+          <p>Table, towels, products, music if you want it. Clear a corner of your living room — that's the only prep on your end.</p>
+        </article>
+        <article class="hiw-card reveal">
+          <span class="hiw-numeral">iii.</span>
+          <h3>You go straight to bed</h3>
+          <p>No traffic home, no parking, no waiting. Skin set, lights low, the rest of the evening already saved for you.</p>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- WAVE: how-it-works → cta -->
-  <div class="wave-divider" aria-hidden="true">
-    <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,40 C150,10 350,55 600,25 C850,0 1050,50 1200,20 L1200,60 L0,60 Z" fill="var(--pink-light)"/>
-    </svg>
-  </div>
+  <!-- SIGNATURE QUOTE (replaces Pinterest cliché) -->
+  <section class="signature-quote">
+    <div class="sq-mark" aria-hidden="true"></div>
+    <blockquote>The best skin work happens slowly, in your own light, with no one waiting on the next chair.</blockquote>
+    <p class="sq-attrib">
+      <span class="monogram-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1"/>
+          <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="0.4"/>
+          <text x="16" y="20.5" text-anchor="middle" fill="currentColor" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" font-weight="500">M</text>
+        </svg>
+      </span>
+      Magdana Machavariani
+    </p>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-container">
+      <p class="section-eyebrow reveal">From clients</p>
+      <h2 class="section-title reveal-clip">Two recent notes.</h2>
+      <div class="testimonial-grid">
+        <figure class="testimonial reveal">
+          <p>"She came on a Wednesday afternoon with three quiet boxes and a calm I haven't felt at a salon. I haven't gone back to a spa since."</p>
+          <figcaption class="t-attrib">— H.M., Spring Lake</figcaption>
+        </figure>
+        <figure class="testimonial reveal">
+          <p>"Magdana doesn't sell. She listens, treats, and writes out a small note about what to do until next time. Refreshing in this industry."</p>
+          <figcaption class="t-attrib">— A.R., Manasquan</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
 
   <!-- BOOKING CTA -->
   <section class="cta-section">
     <div class="cta-container">
-      <h2 class="reveal">Ready for your treatment?</h2>
-      <p class="reveal">Book your appointment online and Magdana will come to you.</p>
+      <h2 class="reveal">Pour yourself a cup. <em>I'll bring everything else.</em></h2>
+      <p class="reveal">A short note over WhatsApp is enough — most weeks I have a slot within seven days.</p>
       <div class="cta-buttons reveal">
-        <a href="booking.html" class="btn-primary">Book Online</a>
-        <a href="https://wa.me/17325673347" class="btn-whatsapp" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a href="booking.html" class="btn-primary">Request a visit</a>
+        <a href="https://wa.me/17325673347" class="btn-whatsapp" target="_blank" rel="noopener">WhatsApp Magdana</a>
       </div>
     </div>
   </section>
@@ -245,22 +290,62 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-container">
+    <div class="footer-card">
       <div class="footer-brand">
-        <span class="logo">Lamazi</span>
-        <p>Professional skincare treatments,<br/>delivered to your home in NJ & NY.</p>
+        <span class="logo">
+          <span class="monogram-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1"/>
+              <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="0.4"/>
+              <text x="16" y="20.5" text-anchor="middle" fill="currentColor" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" font-weight="500">M</text>
+            </svg>
+          </span>
+          Lamazi
+        </span>
+        <p>Skincare on your kitchen table — Brielle &amp; the Jersey Shore.</p>
       </div>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="booking.html">Book Now</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <p class="footer-copy">© 2026 Lamazi Ltd. All rights reserved.</p>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="services.html">Services &amp; pricing</a></li>
+          <li><a href="about.html">About Magdana</a></li>
+          <li><a href="booking.html">Request a visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Reach</h4>
+        <ul>
+          <li><a href="https://wa.me/17325673347" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="tel:+17325673347">+1 (732) 567-3347</a></li>
+          <li><a href="mailto:lamazibeauty@gmail.com">lamazibeauty@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul>
+          <li><span>Mon–Fri · 9–7</span></li>
+          <li><span>Sat · 10–4</span></li>
+          <li><span>Sun · by appointment</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Lamazi Ltd. All rights reserved.</span>
+      <span>Brielle, NJ</span>
     </div>
   </footer>
-  <button class="back-to-top" aria-label="Back to top">↑</button>
-  <script src="script.js" defer></script>
 
+  <button class="back-to-top" aria-label="Back to top">
+    <span class="monogram-mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1"/>
+        <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="0.4"/>
+        <text x="16" y="20.5" text-anchor="middle" fill="currentColor" font-family="Cormorant Garamond, Georgia, serif" font-size="13" font-style="italic" font-weight="500">M</text>
+      </svg>
+    </span>
+  </button>
+
+  <script src="script.js" defer></script>
 </body>
 </html>

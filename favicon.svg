@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lamazi">
-  <rect width="64" height="64" rx="16" fill="#FDF0F3"/>
-  <path d="M22 14h10v30h15v8H22z" fill="#8F465C"/>
-  <circle cx="44" cy="20" r="5" fill="#C97A8F"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lamazi monogram">
+  <rect width="64" height="64" rx="6" fill="#FAF6EE"/>
+  <circle cx="32" cy="32" r="22" fill="none" stroke="#7A2E3B" stroke-width="2"/>
+  <circle cx="32" cy="32" r="18" fill="none" stroke="#7A2E3B" stroke-width="0.6"/>
+  <text x="32" y="40.5" text-anchor="middle"
+        font-family="Cormorant Garamond, Georgia, serif"
+        font-size="22" font-style="italic" font-weight="500" fill="#7A2E3B">M</text>
 </svg>
