@@ -35,11 +35,13 @@ document.querySelectorAll('#nav-links a').forEach((link) => {
   link.addEventListener('click', () => toggleMenu(false));
 });
 
+// === SCROLL REVEAL (covers both .reveal and .reveal-clip) ===
 const observer = new IntersectionObserver(
   (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }),
   { threshold: 0.12 }
 );
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+document.querySelectorAll('.reveal, .reveal-clip').forEach((el) => observer.observe(el));
+
 const navbar = document.querySelector('.navbar');
 const backToTop = document.querySelector('.back-to-top');
 window.addEventListener('scroll', () => {
@@ -48,3 +50,40 @@ window.addEventListener('scroll', () => {
   backToTop?.classList.toggle('visible', y > 300);
 });
 backToTop?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// === HERO WORD STAGGER ===
+(function initHeroWordStagger() {
+  const h1 = document.querySelector('.hero-title');
+  if (!h1) return;
+
+  h1.style.animation = 'none';
+  h1.style.opacity = '1';
+  h1.style.transform = 'none';
+
+  const words = h1.textContent.trim().split(/\s+/);
+  h1.innerHTML = words
+    .map((word, i) => `<span class="word-span" style="animation-delay:${i * 80}ms">${word}</span>`)
+    .join(' ');
+})();
+
+// === 3D CARD TILT ===
+(function initCardTilt() {
+  if (window.matchMedia('(hover: none)').matches) return;
+
+  document.querySelectorAll('.service-card').forEach((card) => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const rotY = ((x / rect.width) - 0.5) * 12;
+      const rotX = -((y / rect.height) - 0.5) * 12;
+      card.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
+      card.style.boxShadow = '0 16px 40px rgba(201,122,143,0.22)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+      card.style.boxShadow = '';
+    });
+  });
+})();
